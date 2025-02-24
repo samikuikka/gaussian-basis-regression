@@ -19,8 +19,6 @@ def solve_normal_equations(Phi, y):
 
 w = solve_normal_equations(Phi, y)
 
-Phi_test = gaussian_basis(x, centers, sigma)
-
 x_plot = np.linspace(0, 1, 200)
 Phi_plot = gaussian_basis(x_plot, centers, sigma)
 y_plot = Phi_plot @ w
